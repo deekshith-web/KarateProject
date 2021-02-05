@@ -1,0 +1,63 @@
+<testsuite failures="1" name="FeatureFile/karate16_Splank.feature" skipped="0" tests="2" time="0.161872">
+  <testcase classname="FeatureFile.karate16_Splank" name="Job Search 1" time="0.0889">
+    <failure message="karate16_Splank.feature:30 - evaluation (js) failed: util.writeToFile(&quot;&quot;), javax.script.ScriptException: TypeError: Can not invoke method [jdk.internal.dynalink.beans.SimpleDynamicMethod void misc.Utils.writeToFile(String,String)] with the passed arguments; they do not match any of its method signatures. in &lt;eval&gt; at line number 1&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">* def login = ............................................................. passed
+* def auth = login("palmetoadmin", "P@lmeto@123") ......................... passed
+* print auth .............................................................. passed
+* configure ssl = true .................................................... passed
+Given url "https://192.168.1.62:8089" ..................................... passed
+And header Authorization = auth ........................................... passed
+Given path "/services/search/jobs" ........................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print responseType ...................................................... passed
+* def util = Java.type("misc.Utils") ...................................... passed
+* def res = get response .................................................. passed
+* util.writeToFile("") .................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate16_Splank.feature:30 - evaluation (js) failed: util.writeToFile(""), javax.script.ScriptException: TypeError: Can not invoke method [jdk.internal.dynalink.beans.SimpleDynamicMethod void misc.Utils.writeToFile(String,String)] with the passed arguments; they do not match any of its method signatures. in &lt;eval&gt; at line number 1
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.* util.writeToFile("") (karate16_Splank.feature:30)&#13;
+
+* def title = get response //feed/title ................................... skipped
+* print title ............................................................. skipped
+* match title == "jobs" ................................................... skipped</failure>
+  </testcase>
+  <testcase classname="FeatureFile.karate16_Splank" name="Alert Search 1" time="0.072972">
+    <system-out>* def login = ............................................................. passed
+* def auth = login("palmetoadmin", "P@lmeto@123") ......................... passed
+* print auth .............................................................. passed
+* configure ssl = true .................................................... passed
+Given url "https://192.168.1.62:8089" ..................................... passed
+And header Authorization = auth ........................................... passed
+Given path "/services/search/jobs" ........................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print responseType ...................................................... passed
+* def util = Java.type("misc.Utils") ...................................... passed
+* def res = get response .................................................. passed
+* util.writeToFile("") .................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate16_Splank.feature:30 - evaluation (js) failed: util.writeToFile(""), javax.script.ScriptException: TypeError: Can not invoke method [jdk.internal.dynalink.beans.SimpleDynamicMethod void misc.Utils.writeToFile(String,String)] with the passed arguments; they do not match any of its method signatures. in &lt;eval&gt; at line number 1
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.* util.writeToFile("") (karate16_Splank.feature:30)&#13;
+
+* def title = get response //feed/title ................................... skipped
+* print title ............................................................. skipped
+* match title == "jobs" ................................................... skipped
+* def login = ............................................................. passed
+* def auth = login("palmetoadmin", "P@lmeto@123") ......................... passed
+* print auth .............................................................. passed
+* configure ssl = true .................................................... passed
+Given url "https://192.168.1.62:8089" ..................................... passed
+And header Authorization = auth ........................................... passed
+Given path "/services/alerts/alert_actions" ............................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print responseType ...................................................... passed
+* def title = get response //feed/title ................................... passed
+* print title ............................................................. passed
+* match title == "alert_actions" .......................................... passed</system-out>
+  </testcase>
+</testsuite>

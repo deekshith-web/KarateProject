@@ -1,0 +1,497 @@
+<testsuite failures="8" name="FeatureFile/kafka03.feature" skipped="0" tests="8" time="40.012037">
+  <testcase classname="FeatureFile.kafka03" name="Creating Consumer" time="4.996701">
+    <failure message="kafka03.feature:19 - &#10;org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out">Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group" ................................. passed
+And request ............................................................... passed
+And header Content-Type = "application/vnd.kafka.json.v2+json" ............ passed
+When method post .......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:19 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method post (kafka03.feature:19)&#13;
+
+Then status 200 ........................................................... skipped
+* print response .......................................................... skipped
+* match response.instance_id == "my_consumer3" ............................ skipped
+* def consumer_url = response.base_uri .................................... skipped
+* print consumer_url ...................................................... skipped</failure>
+  </testcase>
+  <testcase classname="FeatureFile.kafka03" name="Subscribing to topic" time="5.023576">
+    <failure message="kafka03.feature:37 - &#10;org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out">Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group" ................................. passed
+And request ............................................................... passed
+And header Content-Type = "application/vnd.kafka.json.v2+json" ............ passed
+When method post .......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:19 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method post (kafka03.feature:19)&#13;
+
+Then status 200 ........................................................... skipped
+* print response .......................................................... skipped
+* match response.instance_id == "my_consumer3" ............................ skipped
+* def consumer_url = response.base_uri .................................... skipped
+* print consumer_url ...................................................... skipped
+Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/my_consumer3/subscription" . passed
+And request ............................................................... passed
+And header Content-Type = "application/vnd.kafka.v2+json" ................. passed
+When method post .......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:37 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method post (kafka03.feature:37)&#13;
+
+Then status 204 ........................................................... skipped</failure>
+  </testcase>
+  <testcase classname="FeatureFile.kafka03" name="Getting Subscription" time="4.992376">
+    <failure message="kafka03.feature:45 - &#10;org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out">Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group" ................................. passed
+And request ............................................................... passed
+And header Content-Type = "application/vnd.kafka.json.v2+json" ............ passed
+When method post .......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:19 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method post (kafka03.feature:19)&#13;
+
+Then status 200 ........................................................... skipped
+* print response .......................................................... skipped
+* match response.instance_id == "my_consumer3" ............................ skipped
+* def consumer_url = response.base_uri .................................... skipped
+* print consumer_url ...................................................... skipped
+Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/my_consumer3/subscription" . passed
+And request ............................................................... passed
+And header Content-Type = "application/vnd.kafka.v2+json" ................. passed
+When method post .......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:37 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method post (kafka03.feature:37)&#13;
+
+Then status 204 ........................................................... skipped
+Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/my_consumer3/subscription" . passed
+And header Accept = "application/vnd.kafka.v2+json" ....................... passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:45 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method get (kafka03.feature:45)&#13;
+
+Then status 200 ........................................................... skipped
+* print response .......................................................... skipped
+* assert response.topics[0] == "topic3" ................................... skipped</failure>
+  </testcase>
+  <testcase classname="FeatureFile.kafka03" name="Getting Subscription records" time="4.993535">
+    <failure message="kafka03.feature:56 - &#10;org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out">Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group" ................................. passed
+And request ............................................................... passed
+And header Content-Type = "application/vnd.kafka.json.v2+json" ............ passed
+When method post .......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:19 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method post (kafka03.feature:19)&#13;
+
+Then status 200 ........................................................... skipped
+* print response .......................................................... skipped
+* match response.instance_id == "my_consumer3" ............................ skipped
+* def consumer_url = response.base_uri .................................... skipped
+* print consumer_url ...................................................... skipped
+Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/my_consumer3/subscription" . passed
+And request ............................................................... passed
+And header Content-Type = "application/vnd.kafka.v2+json" ................. passed
+When method post .......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:37 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method post (kafka03.feature:37)&#13;
+
+Then status 204 ........................................................... skipped
+Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/my_consumer3/subscription" . passed
+And header Accept = "application/vnd.kafka.v2+json" ....................... passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:45 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method get (kafka03.feature:45)&#13;
+
+Then status 200 ........................................................... skipped
+* print response .......................................................... skipped
+* assert response.topics[0] == "topic3" ................................... skipped
+Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/my_consumer3/records" .. passed
+And param timeout = 3000 .................................................. passed
+And param max_bytes = 300000 .............................................. passed
+And header Accept = "application/vnd.kafka.json.v2+json" .................. passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:56 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method get (kafka03.feature:56)&#13;
+
+Then status 200 ........................................................... skipped
+* print response .......................................................... skipped</failure>
+  </testcase>
+  <testcase classname="FeatureFile.kafka03" name="Getting assigned Assignments" time="5.008667">
+    <failure message="kafka03.feature:64 - &#10;org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out">Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group" ................................. passed
+And request ............................................................... passed
+And header Content-Type = "application/vnd.kafka.json.v2+json" ............ passed
+When method post .......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:19 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method post (kafka03.feature:19)&#13;
+
+Then status 200 ........................................................... skipped
+* print response .......................................................... skipped
+* match response.instance_id == "my_consumer3" ............................ skipped
+* def consumer_url = response.base_uri .................................... skipped
+* print consumer_url ...................................................... skipped
+Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/my_consumer3/subscription" . passed
+And request ............................................................... passed
+And header Content-Type = "application/vnd.kafka.v2+json" ................. passed
+When method post .......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:37 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method post (kafka03.feature:37)&#13;
+
+Then status 204 ........................................................... skipped
+Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/my_consumer3/subscription" . passed
+And header Accept = "application/vnd.kafka.v2+json" ....................... passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:45 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method get (kafka03.feature:45)&#13;
+
+Then status 200 ........................................................... skipped
+* print response .......................................................... skipped
+* assert response.topics[0] == "topic3" ................................... skipped
+Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/my_consumer3/records" .. passed
+And param timeout = 3000 .................................................. passed
+And param max_bytes = 300000 .............................................. passed
+And header Accept = "application/vnd.kafka.json.v2+json" .................. passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:56 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method get (kafka03.feature:56)&#13;
+
+Then status 200 ........................................................... skipped
+* print response .......................................................... skipped
+Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/my_consumer3/assignments" . passed
+And header Accept = "application/vnd.kafka.v2+json" ....................... passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:64 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method get (kafka03.feature:64)&#13;
+
+Then status 200 ........................................................... skipped
+* print response .......................................................... skipped
+* assert response.partitions[0].topic == "topic3" ......................... skipped</failure>
+  </testcase>
+  <testcase classname="FeatureFile.kafka03" name="Deleting assigned subscription" time="4.993117">
+    <failure message="kafka03.feature:74 - &#10;org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out">Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group" ................................. passed
+And request ............................................................... passed
+And header Content-Type = "application/vnd.kafka.json.v2+json" ............ passed
+When method post .......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:19 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method post (kafka03.feature:19)&#13;
+
+Then status 200 ........................................................... skipped
+* print response .......................................................... skipped
+* match response.instance_id == "my_consumer3" ............................ skipped
+* def consumer_url = response.base_uri .................................... skipped
+* print consumer_url ...................................................... skipped
+Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/my_consumer3/subscription" . passed
+And request ............................................................... passed
+And header Content-Type = "application/vnd.kafka.v2+json" ................. passed
+When method post .......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:37 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method post (kafka03.feature:37)&#13;
+
+Then status 204 ........................................................... skipped
+Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/my_consumer3/subscription" . passed
+And header Accept = "application/vnd.kafka.v2+json" ....................... passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:45 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method get (kafka03.feature:45)&#13;
+
+Then status 200 ........................................................... skipped
+* print response .......................................................... skipped
+* assert response.topics[0] == "topic3" ................................... skipped
+Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/my_consumer3/records" .. passed
+And param timeout = 3000 .................................................. passed
+And param max_bytes = 300000 .............................................. passed
+And header Accept = "application/vnd.kafka.json.v2+json" .................. passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:56 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method get (kafka03.feature:56)&#13;
+
+Then status 200 ........................................................... skipped
+* print response .......................................................... skipped
+Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/my_consumer3/assignments" . passed
+And header Accept = "application/vnd.kafka.v2+json" ....................... passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:64 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method get (kafka03.feature:64)&#13;
+
+Then status 200 ........................................................... skipped
+* print response .......................................................... skipped
+* assert response.partitions[0].topic == "topic3" ......................... skipped
+Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/my_consumer3/subscription" . passed
+And header Accept = "application/vnd.kafka.v2+json" ....................... passed
+When method delete ........................................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:74 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method delete (kafka03.feature:74)&#13;
+
+Then status 204 ........................................................... skipped</failure>
+  </testcase>
+  <testcase classname="FeatureFile.kafka03" name="Deleting consumer" time="4.99451">
+    <failure message="kafka03.feature:81 - &#10;org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out">Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group" ................................. passed
+And request ............................................................... passed
+And header Content-Type = "application/vnd.kafka.json.v2+json" ............ passed
+When method post .......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:19 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method post (kafka03.feature:19)&#13;
+
+Then status 200 ........................................................... skipped
+* print response .......................................................... skipped
+* match response.instance_id == "my_consumer3" ............................ skipped
+* def consumer_url = response.base_uri .................................... skipped
+* print consumer_url ...................................................... skipped
+Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/my_consumer3/subscription" . passed
+And request ............................................................... passed
+And header Content-Type = "application/vnd.kafka.v2+json" ................. passed
+When method post .......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:37 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method post (kafka03.feature:37)&#13;
+
+Then status 204 ........................................................... skipped
+Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/my_consumer3/subscription" . passed
+And header Accept = "application/vnd.kafka.v2+json" ....................... passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:45 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method get (kafka03.feature:45)&#13;
+
+Then status 200 ........................................................... skipped
+* print response .......................................................... skipped
+* assert response.topics[0] == "topic3" ................................... skipped
+Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/my_consumer3/records" .. passed
+And param timeout = 3000 .................................................. passed
+And param max_bytes = 300000 .............................................. passed
+And header Accept = "application/vnd.kafka.json.v2+json" .................. passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:56 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method get (kafka03.feature:56)&#13;
+
+Then status 200 ........................................................... skipped
+* print response .......................................................... skipped
+Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/my_consumer3/assignments" . passed
+And header Accept = "application/vnd.kafka.v2+json" ....................... passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:64 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method get (kafka03.feature:64)&#13;
+
+Then status 200 ........................................................... skipped
+* print response .......................................................... skipped
+* assert response.partitions[0].topic == "topic3" ......................... skipped
+Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/my_consumer3/subscription" . passed
+And header Accept = "application/vnd.kafka.v2+json" ....................... passed
+When method delete ........................................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:74 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method delete (kafka03.feature:74)&#13;
+
+Then status 204 ........................................................... skipped
+Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/my_consumer3" .......... passed
+And header Accept = "application/vnd.kafka.v2+json" ....................... passed
+When method delete ........................................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:81 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method delete (kafka03.feature:81)&#13;
+
+Then status 204 ........................................................... skipped</failure>
+  </testcase>
+  <testcase classname="FeatureFile.kafka03" name="Deleting consumer - Negative Test Case" time="5.009554">
+    <failure message="kafka03.feature:87 - &#10;org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out">Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group" ................................. passed
+And request ............................................................... passed
+And header Content-Type = "application/vnd.kafka.json.v2+json" ............ passed
+When method post .......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:19 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method post (kafka03.feature:19)&#13;
+
+Then status 200 ........................................................... skipped
+* print response .......................................................... skipped
+* match response.instance_id == "my_consumer3" ............................ skipped
+* def consumer_url = response.base_uri .................................... skipped
+* print consumer_url ...................................................... skipped
+Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/my_consumer3/subscription" . passed
+And request ............................................................... passed
+And header Content-Type = "application/vnd.kafka.v2+json" ................. passed
+When method post .......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:37 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method post (kafka03.feature:37)&#13;
+
+Then status 204 ........................................................... skipped
+Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/my_consumer3/subscription" . passed
+And header Accept = "application/vnd.kafka.v2+json" ....................... passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:45 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method get (kafka03.feature:45)&#13;
+
+Then status 200 ........................................................... skipped
+* print response .......................................................... skipped
+* assert response.topics[0] == "topic3" ................................... skipped
+Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/my_consumer3/records" .. passed
+And param timeout = 3000 .................................................. passed
+And param max_bytes = 300000 .............................................. passed
+And header Accept = "application/vnd.kafka.json.v2+json" .................. passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:56 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method get (kafka03.feature:56)&#13;
+
+Then status 200 ........................................................... skipped
+* print response .......................................................... skipped
+Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/my_consumer3/assignments" . passed
+And header Accept = "application/vnd.kafka.v2+json" ....................... passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:64 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method get (kafka03.feature:64)&#13;
+
+Then status 200 ........................................................... skipped
+* print response .......................................................... skipped
+* assert response.partitions[0].topic == "topic3" ......................... skipped
+Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/my_consumer3/subscription" . passed
+And header Accept = "application/vnd.kafka.v2+json" ....................... passed
+When method delete ........................................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:74 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method delete (kafka03.feature:74)&#13;
+
+Then status 204 ........................................................... skipped
+Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/my_consumer3" .......... passed
+And header Accept = "application/vnd.kafka.v2+json" ....................... passed
+When method delete ........................................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:81 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method delete (kafka03.feature:81)&#13;
+
+Then status 204 ........................................................... skipped
+Given url "http://192.168.1.94:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/my_consumer3" .......... passed
+And header Accept = "application/vnd.kafka.v2+json" ....................... passed
+When method delete ........................................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: kafka03.feature:87 - 
+org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.1.94:8082 [/192.168.1.94] failed: connect timed out&#13;
+	at ✽.When method delete (kafka03.feature:87)&#13;
+
+Then status 404 ........................................................... skipped
+* assert response.message == "Consumer instance not found." ............... skipped</failure>
+  </testcase>
+</testsuite>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>FeatureFile.karate14</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">0</div>
+            
+<div class="bg-danger" id="nav-fail">2</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2021-02-05 03:09:12 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item failed">
+<a href="#[1:4]">[1:4] Non static method TC </a>
+</div>
+<div class="nav-item failed">
+<a href="#[2:20]">[2:20] Non static method TC2 </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">FeatureFile/karate14.feature</span><span class="feature-description">java calling java static and non static method | java static and non static method</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:4]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:4]</span><span class="scenario-name">Non static method TC </span>
+</div>
+<div class="scenario-time failed">ms: 9</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="1">
+<div class="step-ref passed">1</div>
+<div class="step-cell passed">* def env1 =</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="1">function()
+{
+var temp  = Java.type('misc.Utils')
+var utils = new temp();
+return utils.method2();
+}
+15:09:10.962 From karate-config file</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">* print env1()</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="preformatted" data-parent="2">15:09:10.962 [print]</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref failed">3</div>
+<div class="step-cell failed">* def res =  call env1</div>
+</div>
+<div class="time-cell failed">1</div>
+</div>
+<div class="preformatted" data-parent="3">15:09:10.962 javascript function call failed: &lt;eval&gt;:5 TypeError: utils.method2 is not a function
+15:09:10.962 failed function body: function()
+{
+var temp  = Java.type('misc.Utils')
+var utils = new temp();
+return utils.method2();
+}
+karate14.feature:16 - javascript function call failed: &lt;eval&gt;:5 TypeError: utils.method2 is not a function</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref skipped">4</div>
+<div class="step-cell skipped">* print res</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="preformatted" data-parent="4">15:09:10.962 after scenario inside config</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2:20]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [2:20]</span><span class="scenario-name">Non static method TC2 </span>
+</div>
+<div class="scenario-time failed">ms: 6</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">* def env2 =</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="5">function()
+{
+var temp  = Java.type('misc.Utils')
+return temp.method1();
+}
+15:09:10.977 From karate-config file</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">* print env2()</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="preformatted" data-parent="6">15:09:10.977 [print]</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref failed">7</div>
+<div class="step-cell failed">* def res =  call env2</div>
+</div>
+<div class="time-cell failed">0</div>
+</div>
+<div class="preformatted" data-parent="7">15:09:10.977 javascript function call failed: &lt;eval&gt;:4 TypeError: temp.method1 is not a function
+15:09:10.977 failed function body: function()
+{
+var temp  = Java.type('misc.Utils')
+return temp.method1();
+}
+karate14.feature:32 - javascript function call failed: &lt;eval&gt;:4 TypeError: temp.method1 is not a function</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref skipped">8</div>
+<div class="step-cell skipped">* print res</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="preformatted" data-parent="8">15:09:10.977 after scenario inside config</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<testsuite failures="2" name="FeatureFile/karateTestSuite1.feature" skipped="0" tests="2" time="0">
+  <testcase classname="FeatureFile.karateTestSuite1" name="TestCase1" time="0">
+    <failure message="karateTestSuite1.feature:5 - no step-definition method match found for: .....">Given ..... ............................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karateTestSuite1.feature:5 - no step-definition method match found for: .....&#13;
+	at ✽.Given ..... (karateTestSuite1.feature:5)&#13;
+
+When ...... ............................................................... skipped
+Then ....... .............................................................. skipped</failure>
+  </testcase>
+  <testcase classname="FeatureFile.karateTestSuite1" name="TestCase2" time="0">
+    <failure message="karateTestSuite1.feature:10 - no step-definition method match found for: .....">Given ..... ............................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karateTestSuite1.feature:5 - no step-definition method match found for: .....&#13;
+	at ✽.Given ..... (karateTestSuite1.feature:5)&#13;
+
+When ...... ............................................................... skipped
+Then ....... .............................................................. skipped
+Given ..... ............................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karateTestSuite1.feature:10 - no step-definition method match found for: .....&#13;
+	at ✽.Given ..... (karateTestSuite1.feature:10)&#13;
+
+When ...... ............................................................... skipped
+Then ....... .............................................................. skipped</failure>
+  </testcase>
+</testsuite>

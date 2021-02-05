@@ -1,0 +1,33 @@
+<testsuite failures="2" name="FeatureFile/karate14.feature" skipped="0" tests="2" time="0.015018">
+  <testcase classname="FeatureFile.karate14" name="Non static method TC" time="0.009341">
+    <failure message="karate14.feature:16 - javascript function call failed: &lt;eval&gt;:5 TypeError: utils.method2 is not a function">* def env1 = .............................................................. passed
+* print env1() ............................................................ passed
+* def res =  call env1 .................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate14.feature:16 - javascript function call failed: &lt;eval&gt;:5 TypeError: utils.method2 is not a function&#13;
+	at ✽.* def res =  call env1 (karate14.feature:16)&#13;
+
+* print res ............................................................... skipped</failure>
+  </testcase>
+  <testcase classname="FeatureFile.karate14" name="Non static method TC2" time="0.005678">
+    <failure message="karate14.feature:32 - javascript function call failed: &lt;eval&gt;:4 TypeError: temp.method1 is not a function">* def env1 = .............................................................. passed
+* print env1() ............................................................ passed
+* def res =  call env1 .................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate14.feature:16 - javascript function call failed: &lt;eval&gt;:5 TypeError: utils.method2 is not a function&#13;
+	at ✽.* def res =  call env1 (karate14.feature:16)&#13;
+
+* print res ............................................................... skipped
+* def env2 = .............................................................. passed
+* print env2() ............................................................ passed
+* def res =  call env2 .................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate14.feature:32 - javascript function call failed: &lt;eval&gt;:4 TypeError: temp.method1 is not a function&#13;
+	at ✽.* def res =  call env2 (karate14.feature:32)&#13;
+
+* print res ............................................................... skipped</failure>
+  </testcase>
+</testsuite>

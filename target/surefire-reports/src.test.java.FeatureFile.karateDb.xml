@@ -1,0 +1,12 @@
+<testsuite failures="1" name="src/test/java/FeatureFile/karateDb.feature" skipped="0" tests="1" time="0.432738">
+  <testcase classname="src.test.java.FeatureFile.karateDb" name="insert stmt test case" time="0.432738">
+    <failure message="karateDb.feature:19 - path: $, actual: 'Exception: Login failed for user 'sa'. ClientConnectionId:40a9d4ff-4e30-4e11-a24e-07980f9d9b7e', expected: 'Success', reason: not equal">* def db = Java.type('misc.MyDb') ......................................... passed
+* def res = db.insertStatement("Insert into tools values(4567,'sample2','xyz')") . passed
+* print res ............................................................... passed
+* match res == 'Success' .................................................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karateDb.feature:19 - path: $, actual: 'Exception: Login failed for user 'sa'. ClientConnectionId:40a9d4ff-4e30-4e11-a24e-07980f9d9b7e', expected: 'Success', reason: not equal&#13;
+	at ✽.* match res == 'Success' (karateDb.feature:19)</failure>
+  </testcase>
+</testsuite>

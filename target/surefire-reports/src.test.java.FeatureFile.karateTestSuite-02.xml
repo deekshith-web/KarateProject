@@ -1,0 +1,11 @@
+<testsuite failures="1" name="src/test/java/FeatureFile/karateTestSuite-02.feature" skipped="0" tests="1" time="0.055573">
+  <testcase classname="src.test.java.FeatureFile.karateTestSuite-02" name="Json test case4" time="0.055573">
+    <failure message="karateTestSuite-02.feature:33 - path: $.tool.version, actual: '0.9.6', expected: '0.9.8', reason: not equal">Given def json = { "id" : "101", "tool": { "name":"Karate", "version":"0.9.6"}} . passed
+* match json.id == "101" .................................................. passed
+* match json.tool == { "name":"Karate", "version":"0.9.8"} ................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karateTestSuite-02.feature:33 - path: $.tool.version, actual: '0.9.6', expected: '0.9.8', reason: not equal&#13;
+	at ✽.* match json.tool == { "name":"Karate", "version":"0.9.8"} (karateTestSuite-02.feature:33)</failure>
+  </testcase>
+</testsuite>

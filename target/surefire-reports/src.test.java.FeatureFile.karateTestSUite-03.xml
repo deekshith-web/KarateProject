@@ -1,0 +1,13 @@
+<testsuite failures="1" name="src/test/java/FeatureFile/karateTestSUite-03.feature" skipped="0" tests="1" time="0.019274">
+  <testcase classname="src.test.java.FeatureFile.karateTestSUite-03" name="xml test case7" time="0.019274">
+    <failure message="karateTestSUite-03.feature:71 - evaluation (js) failed: eval( xml/info/tool[1]/name, javax.script.ScriptException: &lt;eval&gt;:1:27 Expected , but found eof&#13;&#10;eval( xml/info/tool[1]/name&#13;&#10;                           ^ in &lt;eval&gt; at line number 1 at column number 27&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">Given def xml = ........................................................... passed
+* match eval( xml/info/tool[1]/name == "Karate" ) &amp;&amp; eval( xml/info/tool[2]/name == "IntelliJ" ) . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karateTestSUite-03.feature:71 - evaluation (js) failed: eval( xml/info/tool[1]/name, javax.script.ScriptException: &lt;eval&gt;:1:27 Expected , but found eof&#13;
+eval( xml/info/tool[1]/name&#13;
+                           ^ in &lt;eval&gt; at line number 1 at column number 27
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.* match eval( xml/info/tool[1]/name == "Karate" ) &amp;&amp; eval( xml/info/tool[2]/name == "IntelliJ" ) (karateTestSUite-03.feature:71)</failure>
+  </testcase>
+</testsuite>

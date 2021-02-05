@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>src.test.java.FeatureFile.karate04</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">0</div>
+            
+<div class="bg-danger" id="nav-fail">1</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2021-02-02 06:11:01 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item failed">
+<a href="#[4:79]">[4:79] Soap API TestCase4 </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/FeatureFile/karate04.feature</span><span class="feature-description">karate TestSuite4 | validating Soap api</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[4:79]">
+<div class="heading-container">
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">soap</a>
+</div>
+<span class="scenario-keyword">Scenario: [4:79]</span><span class="scenario-name">Soap API TestCase4 </span>
+</div>
+<div class="scenario-time failed">ms: 1130</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="1">
+<div class="step-ref passed">1</div>
+<div class="step-cell passed">Given url "http://www.dneonline.com//calculator.asmx"</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="1">18:11:00.301 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">And header Content-Type = "text/xml;charset=utf-8"</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">And request</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="3">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+&lt;soap:Body&gt;
+&lt;Add xmlns="http://tempuri.org/"&gt;
+&lt;intA&gt;5&lt;/intA&gt;
+&lt;intB&gt;6&lt;/intB&gt;
+&lt;/Add&gt;
+&lt;/soap:Body&gt;
+&lt;/soap:Envelope&gt;</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">When soap action "http://www.dneonline.com//calculator.asmx"</div>
+</div>
+<div class="time-cell passed">1124</div>
+</div>
+<div class="preformatted" data-parent="4">18:11:00.706 request:
+1 &gt; POST http://www.dneonline.com//calculator.asmx
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 289
+1 &gt; Content-Type: text/xml; charset=UTF-8
+1 &gt; Host: www.dneonline.com
+1 &gt; SOAPAction: http://www.dneonline.com//calculator.asmx
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&#13;
+&lt;soap:Body&gt;&#13;
+&lt;Add xmlns="http://tempuri.org/"&gt;&#13;
+&lt;intA&gt;5&lt;/intA&gt;&#13;
+&lt;intB&gt;6&lt;/intB&gt;&#13;
+&lt;/Add&gt;&#13;
+&lt;/soap:Body&gt;&#13;
+&lt;/soap:Envelope&gt;
+
+18:11:01.441 response time in milliseconds: 730.36
+1 &lt; 500
+1 &lt; Cache-Control: private
+1 &lt; Content-Length: 1046
+1 &lt; Content-Type: text/xml; charset=utf-8
+1 &lt; Date: Tue, 02 Feb 2021 12:41:01 GMT
+1 &lt; Server: Microsoft-IIS/8.0
+1 &lt; X-AspNet-Version: 2.0.50727
+1 &lt; X-Powered-By: ASP.NET
+1 &lt; X-Powered-By-Plesk: PleskWin
+&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;soap:Body&gt;&lt;soap:Fault&gt;&lt;faultcode&gt;soap:Client&lt;/faultcode&gt;&lt;faultstring&gt;System.Web.Services.Protocols.SoapException: Server did not recognize the value of HTTP Header SOAPAction: http://www.dneonline.com//calculator.asmx.&#13;
+   at System.Web.Services.Protocols.Soap11ServerProtocolHelper.RouteRequest()&#13;
+   at System.Web.Services.Protocols.SoapServerProtocol.RouteRequest(SoapServerMessage message)&#13;
+   at System.Web.Services.Protocols.SoapServerProtocol.Initialize()&#13;
+   at System.Web.Services.Protocols.ServerProtocol.SetContext(Type type, HttpContext context, HttpRequest request, HttpResponse response)&#13;
+   at System.Web.Services.Protocols.ServerProtocolFactory.Create(Type type, HttpContext context, HttpRequest request, HttpResponse response, Boolean&amp;amp; abortProcessing)&lt;/faultstring&gt;&lt;detail /&gt;&lt;/soap:Fault&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref failed">5</div>
+<div class="step-cell failed">Then status 200</div>
+</div>
+<div class="time-cell failed">1</div>
+</div>
+<div class="preformatted" data-parent="5">18:11:01.441 status code was: 500, expected: 200, response time: 730, url: http://www.dneonline.com//calculator.asmx, response: &lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;soap:Body&gt;&lt;soap:Fault&gt;&lt;faultcode&gt;soap:Client&lt;/faultcode&gt;&lt;faultstring&gt;System.Web.Services.Protocols.SoapException: Server did not recognize the value of HTTP Header SOAPAction: http://www.dneonline.com//calculator.asmx.&#13;
+   at System.Web.Services.Protocols.Soap11ServerProtocolHelper.RouteRequest()&#13;
+   at System.Web.Services.Protocols.SoapServerProtocol.RouteRequest(SoapServerMessage message)&#13;
+   at System.Web.Services.Protocols.SoapServerProtocol.Initialize()&#13;
+   at System.Web.Services.Protocols.ServerProtocol.SetContext(Type type, HttpContext context, HttpRequest request, HttpResponse response)&#13;
+   at System.Web.Services.Protocols.ServerProtocolFactory.Create(Type type, HttpContext context, HttpRequest request, HttpResponse response, Boolean&amp;amp; abortProcessing)&lt;/faultstring&gt;&lt;detail/&gt;&lt;/soap:Fault&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;
+karate04.feature:95 - status code was: 500, expected: 200, response time: 730, url: http://www.dneonline.com//calculator.asmx, response: &lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;soap:Body&gt;&lt;soap:Fault&gt;&lt;faultcode&gt;soap:Client&lt;/faultcode&gt;&lt;faultstring&gt;System.Web.Services.Protocols.SoapException: Server did not recognize the value of HTTP Header SOAPAction: http://www.dneonline.com//calculator.asmx.&#13;
+   at System.Web.Services.Protocols.Soap11ServerProtocolHelper.RouteRequest()&#13;
+   at System.Web.Services.Protocols.SoapServerProtocol.RouteRequest(SoapServerMessage message)&#13;
+   at System.Web.Services.Protocols.SoapServerProtocol.Initialize()&#13;
+   at System.Web.Services.Protocols.ServerProtocol.SetContext(Type type, HttpContext context, HttpRequest request, HttpResponse response)&#13;
+   at System.Web.Services.Protocols.ServerProtocolFactory.Create(Type type, HttpContext context, HttpRequest request, HttpResponse response, Boolean&amp;amp; abortProcessing)&lt;/faultstring&gt;&lt;detail/&gt;&lt;/soap:Fault&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref skipped">6</div>
+<div class="step-cell skipped">* print responseHeaders["Server"]</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref skipped">7</div>
+<div class="step-cell skipped">* print response</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref skipped">8</div>
+<div class="step-cell skipped">* print responseType</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref skipped">9</div>
+<div class="step-cell skipped">* match responseType == "xml"</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref skipped">10</div>
+<div class="step-cell skipped">* match response contains "98.6"</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref skipped">11</div>
+<div class="step-cell skipped">* match response //CelsiusToFahrenheitResult == 98.6</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref skipped">12</div>
+<div class="step-cell skipped">* print responseTime</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref skipped">13</div>
+<div class="step-cell skipped">* assert responseTime &lt;= 2000</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

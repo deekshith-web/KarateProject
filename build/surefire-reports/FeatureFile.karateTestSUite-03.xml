@@ -1,0 +1,112 @@
+<testsuite failures="1" name="FeatureFile/karateTestSUite-03.feature" skipped="0" tests="7" time="0.022521">
+  <testcase classname="FeatureFile.karateTestSUite-03" name="Json test ase1" time="0.006232">
+    <system-out>Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* print xml ............................................................... passed
+* print xml/info/id ....................................................... passed
+* print json.info.id ...................................................... passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFile.karateTestSUite-03" name="Json test case2" time="0.001968">
+    <system-out>Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* print xml ............................................................... passed
+* print xml/info/id ....................................................... passed
+* print json.info.id ...................................................... passed
+Given def xml = ........................................................... passed
+* print xml ............................................................... passed
+* print xml/info/id ....................................................... passed
+* print json.info.id ...................................................... passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFile.karateTestSUite-03" name="xml test case3" time="0.004406">
+    <system-out>Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* print xml ............................................................... passed
+* print xml/info/id ....................................................... passed
+* print json.info.id ...................................................... passed
+Given def xml = ........................................................... passed
+* print xml ............................................................... passed
+* print xml/info/id ....................................................... passed
+* print json.info.id ...................................................... passed
+Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* match  xml/info/id == 101 ............................................... passed
+* match xml.info.tool.name == "Karate" .................................... passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFile.karateTestSUite-03" name="xml test case4" time="0.00145">
+    <system-out>Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* print xml ............................................................... passed
+* print xml/info/id ....................................................... passed
+* print json.info.id ...................................................... passed
+Given def xml = ........................................................... passed
+* print xml ............................................................... passed
+* print xml/info/id ....................................................... passed
+* print json.info.id ...................................................... passed
+Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* match  xml/info/id == 101 ............................................... passed
+* match xml.info.tool.name == "Karate" .................................... passed
+Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* match xml contains "Karate" ............................................. passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFile.karateTestSUite-03" name="xml test case5" time="0.002838">
+    <system-out>Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* print xml ............................................................... passed
+* print xml/info/id ....................................................... passed
+* print json.info.id ...................................................... passed
+Given def xml = ........................................................... passed
+* print xml ............................................................... passed
+* print xml/info/id ....................................................... passed
+* print json.info.id ...................................................... passed
+Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* match  xml/info/id == 101 ............................................... passed
+* match xml.info.tool.name == "Karate" .................................... passed
+Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* match xml contains "Karate" ............................................. passed
+Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* match xml contains "&lt;name&gt;Karate&lt;/name&gt;" ................................ passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFile.karateTestSUite-03" name="xml test case6" time="0.003089">
+    <system-out>Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* print xml ............................................................... passed
+* print xml/info/id ....................................................... passed
+* print json.info.id ...................................................... passed
+Given def xml = ........................................................... passed
+* print xml ............................................................... passed
+* print xml/info/id ....................................................... passed
+* print json.info.id ...................................................... passed
+Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* match  xml/info/id == 101 ............................................... passed
+* match xml.info.tool.name == "Karate" .................................... passed
+Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* match xml contains "Karate" ............................................. passed
+Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* match xml contains "&lt;name&gt;Karate&lt;/name&gt;" ................................ passed
+Given def xml = ........................................................... passed
+* match xml/info/tool[1]/name contains "Karate" ........................... passed
+* match xml/info/tool[2]/name contains "IntelliJ" ......................... passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFile.karateTestSUite-03" name="xml test case7" time="0.00254">
+    <failure message="karateTestSUite-03.feature:71 - evaluation (js) failed: eval( xml/info/tool[1]/name, javax.script.ScriptException: &lt;eval&gt;:1:27 Expected , but found eof&#13;&#10;eval( xml/info/tool[1]/name&#13;&#10;                           ^ in &lt;eval&gt; at line number 1 at column number 27&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* print xml ............................................................... passed
+* print xml/info/id ....................................................... passed
+* print json.info.id ...................................................... passed
+Given def xml = ........................................................... passed
+* print xml ............................................................... passed
+* print xml/info/id ....................................................... passed
+* print json.info.id ...................................................... passed
+Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* match  xml/info/id == 101 ............................................... passed
+* match xml.info.tool.name == "Karate" .................................... passed
+Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* match xml contains "Karate" ............................................. passed
+Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* match xml contains "&lt;name&gt;Karate&lt;/name&gt;" ................................ passed
+Given def xml = ........................................................... passed
+* match xml/info/tool[1]/name contains "Karate" ........................... passed
+* match xml/info/tool[2]/name contains "IntelliJ" ......................... passed
+Given def xml = ........................................................... passed
+* match eval( xml/info/tool[1]/name == "Karate" ) &amp;&amp; eval( xml/info/tool[2]/name == "IntelliJ" ) . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karateTestSUite-03.feature:71 - evaluation (js) failed: eval( xml/info/tool[1]/name, javax.script.ScriptException: &lt;eval&gt;:1:27 Expected , but found eof&#13;
+eval( xml/info/tool[1]/name&#13;
+                           ^ in &lt;eval&gt; at line number 1 at column number 27
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.* match eval( xml/info/tool[1]/name == "Karate" ) &amp;&amp; eval( xml/info/tool[2]/name == "IntelliJ" ) (karateTestSUite-03.feature:71)</failure>
+  </testcase>
+</testsuite>

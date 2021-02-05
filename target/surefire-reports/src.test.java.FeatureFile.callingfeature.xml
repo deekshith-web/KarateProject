@@ -1,0 +1,12 @@
+<testsuite failures="1" name="src/test/java/FeatureFile/callingfeature.feature" skipped="0" tests="1" time="1.280092">
+  <testcase classname="src.test.java.FeatureFile.callingfeature" name="callingFeature testcase1" time="1.280092">
+    <failure message="callingfeature.feature:7 - evaluation (js) failed: result.respnse.string._ == 104, javax.script.ScriptException: TypeError: Cannot get property &quot;string&quot; of null in &lt;eval&gt; at line number 1&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">* def result = call read("calledfeature.feature") ......................... passed
+* print result ............................................................ passed
+* assert result.respnse.string._ == 104 ................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: callingfeature.feature:7 - evaluation (js) failed: result.respnse.string._ == 104, javax.script.ScriptException: TypeError: Cannot get property "string" of null in &lt;eval&gt; at line number 1
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.* assert result.respnse.string._ == 104 (callingfeature.feature:7)</failure>
+  </testcase>
+</testsuite>

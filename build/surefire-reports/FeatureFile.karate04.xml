@@ -1,0 +1,118 @@
+<testsuite failures="1" name="FeatureFile/karate04.feature" skipped="0" tests="4" time="2.042147">
+  <testcase classname="FeatureFile.karate04" name="Soap API TestCase1" time="0.804091">
+    <system-out>Given url "https://www.w3schools.com/xml/tempconvert.asmx" ................ passed
+And header Content-Type = "text/xml;charset=utf-8" ........................ passed
+And request ............................................................... passed
+When soap action "https://www.w3schools.com/xml/CelsiusToFahrenheit" ...... passed
+Then status 200 ........................................................... passed
+* print responseHeaders["Server"] ......................................... passed
+* print responseHeaders["Server"][0] ...................................... passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFile.karate04" name="Soap API TestCase2" time="0.329518">
+    <system-out>Given url "https://www.w3schools.com/xml/tempconvert.asmx" ................ passed
+And header Content-Type = "text/xml;charset=utf-8" ........................ passed
+And request ............................................................... passed
+When soap action "https://www.w3schools.com/xml/CelsiusToFahrenheit" ...... passed
+Then status 200 ........................................................... passed
+* print responseHeaders["Server"] ......................................... passed
+* print responseHeaders["Server"][0] ...................................... passed
+Given url "https://www.w3schools.com/xml/tempconvert.asmx" ................ passed
+And header Content-Type = "text/xml;charset=utf-8" ........................ passed
+And request ............................................................... passed
+When soap action "https://www.w3schools.com/xml/CelsiusToFahrenheit" ...... passed
+Then status 200 ........................................................... passed
+* print responseHeaders["Server"] ......................................... passed
+* print responseHeaders["Server"][0] ...................................... passed
+* match responseHeaders["Server"] == ["Microsoft-IIS/7.5"] ................ passed
+* match responseHeaders["Server"][0] == "Microsoft-IIS/7.5" ............... passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFile.karate04" name="Soap API TestCase3" time="0.332639">
+    <system-out>Given url "https://www.w3schools.com/xml/tempconvert.asmx" ................ passed
+And header Content-Type = "text/xml;charset=utf-8" ........................ passed
+And request ............................................................... passed
+When soap action "https://www.w3schools.com/xml/CelsiusToFahrenheit" ...... passed
+Then status 200 ........................................................... passed
+* print responseHeaders["Server"] ......................................... passed
+* print responseHeaders["Server"][0] ...................................... passed
+Given url "https://www.w3schools.com/xml/tempconvert.asmx" ................ passed
+And header Content-Type = "text/xml;charset=utf-8" ........................ passed
+And request ............................................................... passed
+When soap action "https://www.w3schools.com/xml/CelsiusToFahrenheit" ...... passed
+Then status 200 ........................................................... passed
+* print responseHeaders["Server"] ......................................... passed
+* print responseHeaders["Server"][0] ...................................... passed
+* match responseHeaders["Server"] == ["Microsoft-IIS/7.5"] ................ passed
+* match responseHeaders["Server"][0] == "Microsoft-IIS/7.5" ............... passed
+Given url "https://www.w3schools.com/xml/tempconvert.asmx" ................ passed
+And header Content-Type = "text/xml;charset=utf-8" ........................ passed
+And request ............................................................... passed
+When soap action "https://www.w3schools.com/xml/CelsiusToFahrenheit" ...... passed
+Then status 200 ........................................................... passed
+* print responseHeaders["Server"] ......................................... passed
+* print responseHeaders["Server"][0] ...................................... passed
+* match responseHeaders["Server"] == ["Microsoft-IIS/7.5"] ................ passed
+* match responseHeaders["Server"][0] == "Microsoft-IIS/7.5" ............... passed
+* print responseType ...................................................... passed
+* match responseType == "xml" ............................................. passed
+* match response contains "98.6" .......................................... passed
+* match response //CelsiusToFahrenheitResult == 98.6 ...................... passed
+* print responseTime ...................................................... passed
+* assert responseTime &lt;= 2000 ............................................. passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFile.karate04" name="Soap API TestCase4" time="0.575899">
+    <failure message="karate04.feature:95 - status code was: 500, expected: 200, response time: 567, url: http://www.dneonline.com//calculator.asmx, response: &lt;soap:Envelope xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;soap:Body&gt;&lt;soap:Fault&gt;&lt;faultcode&gt;soap:Client&lt;/faultcode&gt;&lt;faultstring&gt;System.Web.Services.Protocols.SoapException: Server did not recognize the value of HTTP Header SOAPAction: http://www.dneonline.com//calculator.asmx.&#13;&#10;   at System.Web.Services.Protocols.Soap11ServerProtocolHelper.RouteRequest()&#13;&#10;   at System.Web.Services.Protocols.SoapServerProtocol.RouteRequest(SoapServerMessage message)&#13;&#10;   at System.Web.Services.Protocols.SoapServerProtocol.Initialize()&#13;&#10;   at System.Web.Services.Protocols.ServerProtocol.SetContext(Type type, HttpContext context, HttpRequest request, HttpResponse response)&#13;&#10;   at System.Web.Services.Protocols.ServerProtocolFactory.Create(Type type, HttpContext context, HttpRequest request, HttpResponse response, Boolean&amp;amp; abortProcessing)&lt;/faultstring&gt;&lt;detail/&gt;&lt;/soap:Fault&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;">Given url "https://www.w3schools.com/xml/tempconvert.asmx" ................ passed
+And header Content-Type = "text/xml;charset=utf-8" ........................ passed
+And request ............................................................... passed
+When soap action "https://www.w3schools.com/xml/CelsiusToFahrenheit" ...... passed
+Then status 200 ........................................................... passed
+* print responseHeaders["Server"] ......................................... passed
+* print responseHeaders["Server"][0] ...................................... passed
+Given url "https://www.w3schools.com/xml/tempconvert.asmx" ................ passed
+And header Content-Type = "text/xml;charset=utf-8" ........................ passed
+And request ............................................................... passed
+When soap action "https://www.w3schools.com/xml/CelsiusToFahrenheit" ...... passed
+Then status 200 ........................................................... passed
+* print responseHeaders["Server"] ......................................... passed
+* print responseHeaders["Server"][0] ...................................... passed
+* match responseHeaders["Server"] == ["Microsoft-IIS/7.5"] ................ passed
+* match responseHeaders["Server"][0] == "Microsoft-IIS/7.5" ............... passed
+Given url "https://www.w3schools.com/xml/tempconvert.asmx" ................ passed
+And header Content-Type = "text/xml;charset=utf-8" ........................ passed
+And request ............................................................... passed
+When soap action "https://www.w3schools.com/xml/CelsiusToFahrenheit" ...... passed
+Then status 200 ........................................................... passed
+* print responseHeaders["Server"] ......................................... passed
+* print responseHeaders["Server"][0] ...................................... passed
+* match responseHeaders["Server"] == ["Microsoft-IIS/7.5"] ................ passed
+* match responseHeaders["Server"][0] == "Microsoft-IIS/7.5" ............... passed
+* print responseType ...................................................... passed
+* match responseType == "xml" ............................................. passed
+* match response contains "98.6" .......................................... passed
+* match response //CelsiusToFahrenheitResult == 98.6 ...................... passed
+* print responseTime ...................................................... passed
+* assert responseTime &lt;= 2000 ............................................. passed
+Given url "http://www.dneonline.com//calculator.asmx" ..................... passed
+And header Content-Type = "text/xml;charset=utf-8" ........................ passed
+And request ............................................................... passed
+When soap action "http://www.dneonline.com//calculator.asmx" .............. passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate04.feature:95 - status code was: 500, expected: 200, response time: 567, url: http://www.dneonline.com//calculator.asmx, response: &lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;soap:Body&gt;&lt;soap:Fault&gt;&lt;faultcode&gt;soap:Client&lt;/faultcode&gt;&lt;faultstring&gt;System.Web.Services.Protocols.SoapException: Server did not recognize the value of HTTP Header SOAPAction: http://www.dneonline.com//calculator.asmx.&#13;
+   at System.Web.Services.Protocols.Soap11ServerProtocolHelper.RouteRequest()&#13;
+   at System.Web.Services.Protocols.SoapServerProtocol.RouteRequest(SoapServerMessage message)&#13;
+   at System.Web.Services.Protocols.SoapServerProtocol.Initialize()&#13;
+   at System.Web.Services.Protocols.ServerProtocol.SetContext(Type type, HttpContext context, HttpRequest request, HttpResponse response)&#13;
+   at System.Web.Services.Protocols.ServerProtocolFactory.Create(Type type, HttpContext context, HttpRequest request, HttpResponse response, Boolean&amp;amp; abortProcessing)&lt;/faultstring&gt;&lt;detail/&gt;&lt;/soap:Fault&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;&#13;
+	at ✽.Then status 200 (karate04.feature:95)&#13;
+
+* print responseHeaders["Server"] ......................................... skipped
+* print response .......................................................... skipped
+* print responseType ...................................................... skipped
+* match responseType == "xml" ............................................. skipped
+* match response contains "98.6" .......................................... skipped
+* match response //CelsiusToFahrenheitResult == 98.6 ...................... skipped
+* print responseTime ...................................................... skipped
+* assert responseTime &lt;= 2000 ............................................. skipped</failure>
+  </testcase>
+</testsuite>

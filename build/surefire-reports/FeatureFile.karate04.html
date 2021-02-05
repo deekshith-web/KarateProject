@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>FeatureFile.karate04</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">3</div>
+            
+<div class="bg-danger" id="nav-fail">1</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2021-02-05 03:15:02 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:5]">[1:5] Soap API TestCase1 </a>
+</div>
+<div class="nav-item passed">
+<a href="#[2:27]">[2:27] Soap API TestCase2 </a>
+</div>
+<div class="nav-item passed">
+<a href="#[3:49]">[3:49] Soap API TestCase3 </a>
+</div>
+<div class="nav-item failed">
+<a href="#[4:79]">[4:79] Soap API TestCase4 </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">FeatureFile/karate04.feature</span><span class="feature-description">karate TestSuite4 | validating Soap api</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:5]">
+<div class="heading-container">
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">soap</a>
+</div>
+<span class="scenario-keyword">Scenario: [1:5]</span><span class="scenario-name">Soap API TestCase1 </span>
+</div>
+<div class="scenario-time passed">ms: 804</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="1">
+<div class="step-ref passed">1</div>
+<div class="step-cell passed">Given url "https://www.w3schools.com/xml/tempconvert.asmx"</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="1">15:14:58.633 From karate-config file</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">And header Content-Type = "text/xml;charset=utf-8"</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">And request</div>
+</div>
+<div class="time-cell passed">26</div>
+</div>
+<div class="preformatted" data-parent="3">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+  &lt;soap:Body&gt;
+&lt;CelsiusToFahrenheit xmlns="https://www.w3schools.com/xml/"&gt;
+  &lt;Celsius&gt;37&lt;/Celsius&gt;
+&lt;/CelsiusToFahrenheit&gt;
+  &lt;/soap:Body&gt;
+&lt;/soap:Envelope&gt;</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">When soap action "https://www.w3schools.com/xml/CelsiusToFahrenheit"</div>
+</div>
+<div class="time-cell passed">759</div>
+</div>
+<div class="preformatted" data-parent="4">15:14:59.025 request:
+1 &gt; POST https://www.w3schools.com/xml/tempconvert.asmx
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 329
+1 &gt; Content-Type: text/xml; charset=UTF-8
+1 &gt; Host: www.w3schools.com
+1 &gt; SOAPAction: https://www.w3schools.com/xml/CelsiusToFahrenheit
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&#13;
+  &lt;soap:Body&gt;&#13;
+&lt;CelsiusToFahrenheit xmlns="https://www.w3schools.com/xml/"&gt;&#13;
+  &lt;Celsius&gt;37&lt;/Celsius&gt;&#13;
+&lt;/CelsiusToFahrenheit&gt;&#13;
+  &lt;/soap:Body&gt;&#13;
+&lt;/soap:Envelope&gt;
+
+15:14:59.493 response time in milliseconds: 455.22
+1 &lt; 200
+1 &lt; Cache-Control: private, max-age=0,public
+1 &lt; Content-Type: text/xml; charset=utf-8
+1 &lt; Date: Fri, 05 Feb 2021 09:36:48 GMT
+1 &lt; Server: Microsoft-IIS/7.5
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-AspNet-Version: 4.0.30319
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Powered-By: ASP.NET
+&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;soap:Body&gt;&lt;CelsiusToFahrenheitResponse xmlns="https://www.w3schools.com/xml/"&gt;&lt;CelsiusToFahrenheitResult&gt;98.6&lt;/CelsiusToFahrenheitResult&gt;&lt;/CelsiusToFahrenheitResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">* print responseHeaders["Server"]</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="preformatted" data-parent="6">15:14:59.493 [print] [
+  "Microsoft-IIS/7.5"
+]</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">* print responseHeaders["Server"][0]</div>
+</div>
+<div class="time-cell passed">9</div>
+</div>
+<div class="preformatted" data-parent="7">15:14:59.508 [print] Microsoft-IIS/7.515:14:59.508 after scenario inside config</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2:27]">
+<div class="heading-container">
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">soap</a>
+</div>
+<span class="scenario-keyword">Scenario: [2:27]</span><span class="scenario-name">Soap API TestCase2 </span>
+</div>
+<div class="scenario-time passed">ms: 330</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">Given url "https://www.w3schools.com/xml/tempconvert.asmx"</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="8">15:14:59.508 From karate-config file</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref passed">9</div>
+<div class="step-cell passed">And header Content-Type = "text/xml;charset=utf-8"</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-cell passed">And request</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="10">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+  &lt;soap:Body&gt;
+&lt;CelsiusToFahrenheit xmlns="https://www.w3schools.com/xml/"&gt;
+  &lt;Celsius&gt;37&lt;/Celsius&gt;
+&lt;/CelsiusToFahrenheit&gt;
+  &lt;/soap:Body&gt;
+&lt;/soap:Envelope&gt;</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
+<div class="step-cell passed">When soap action "https://www.w3schools.com/xml/CelsiusToFahrenheit"</div>
+</div>
+<div class="time-cell passed">320</div>
+</div>
+<div class="preformatted" data-parent="11">15:14:59.508 request:
+1 &gt; POST https://www.w3schools.com/xml/tempconvert.asmx
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 329
+1 &gt; Content-Type: text/xml; charset=UTF-8
+1 &gt; Host: www.w3schools.com
+1 &gt; SOAPAction: https://www.w3schools.com/xml/CelsiusToFahrenheit
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&#13;
+  &lt;soap:Body&gt;&#13;
+&lt;CelsiusToFahrenheit xmlns="https://www.w3schools.com/xml/"&gt;&#13;
+  &lt;Celsius&gt;37&lt;/Celsius&gt;&#13;
+&lt;/CelsiusToFahrenheit&gt;&#13;
+  &lt;/soap:Body&gt;&#13;
+&lt;/soap:Envelope&gt;
+
+15:14:59.837 response time in milliseconds: 315.05
+1 &lt; 200
+1 &lt; Cache-Control: private, max-age=0,public
+1 &lt; Content-Type: text/xml; charset=utf-8
+1 &lt; Date: Fri, 05 Feb 2021 09:36:48 GMT
+1 &lt; Server: Microsoft-IIS/7.5
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-AspNet-Version: 4.0.30319
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Powered-By: ASP.NET
+&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;soap:Body&gt;&lt;CelsiusToFahrenheitResponse xmlns="https://www.w3schools.com/xml/"&gt;&lt;CelsiusToFahrenheitResult&gt;98.6&lt;/CelsiusToFahrenheitResult&gt;&lt;/CelsiusToFahrenheitResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">* print responseHeaders["Server"]</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="13">15:14:59.837 [print] [
+  "Microsoft-IIS/7.5"
+]</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-cell passed">* print responseHeaders["Server"][0]</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="14">15:14:59.837 [print] Microsoft-IIS/7.5</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
+<div class="step-cell passed">* match responseHeaders["Server"] == ["Microsoft-IIS/7.5"]</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="16">
+<div class="step-ref passed">16</div>
+<div class="step-cell passed">* match responseHeaders["Server"][0] == "Microsoft-IIS/7.5"</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="16">15:14:59.837 after scenario inside config</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[3:49]">
+<div class="heading-container">
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">soap</a>
+</div>
+<span class="scenario-keyword">Scenario: [3:49]</span><span class="scenario-name">Soap API TestCase3 </span>
+</div>
+<div class="scenario-time passed">ms: 333</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="17">
+<div class="step-ref passed">17</div>
+<div class="step-cell passed">Given url "https://www.w3schools.com/xml/tempconvert.asmx"</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="17">15:14:59.837 From karate-config file</div>
+<div class="step-row">
+<div class="step-container" id="18">
+<div class="step-ref passed">18</div>
+<div class="step-cell passed">And header Content-Type = "text/xml;charset=utf-8"</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="19">
+<div class="step-ref passed">19</div>
+<div class="step-cell passed">And request</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="19">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+  &lt;soap:Body&gt;
+&lt;CelsiusToFahrenheit xmlns="https://www.w3schools.com/xml/"&gt;
+  &lt;Celsius&gt;37&lt;/Celsius&gt;
+&lt;/CelsiusToFahrenheit&gt;
+  &lt;/soap:Body&gt;
+&lt;/soap:Envelope&gt;</div>
+<div class="step-row">
+<div class="step-container" id="20">
+<div class="step-ref passed">20</div>
+<div class="step-cell passed">When soap action "https://www.w3schools.com/xml/CelsiusToFahrenheit"</div>
+</div>
+<div class="time-cell passed">303</div>
+</div>
+<div class="preformatted" data-parent="20">15:14:59.852 request:
+1 &gt; POST https://www.w3schools.com/xml/tempconvert.asmx
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 329
+1 &gt; Content-Type: text/xml; charset=UTF-8
+1 &gt; Host: www.w3schools.com
+1 &gt; SOAPAction: https://www.w3schools.com/xml/CelsiusToFahrenheit
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&#13;
+  &lt;soap:Body&gt;&#13;
+&lt;CelsiusToFahrenheit xmlns="https://www.w3schools.com/xml/"&gt;&#13;
+  &lt;Celsius&gt;37&lt;/Celsius&gt;&#13;
+&lt;/CelsiusToFahrenheit&gt;&#13;
+  &lt;/soap:Body&gt;&#13;
+&lt;/soap:Envelope&gt;
+
+15:15:00.149 response time in milliseconds: 299.48
+1 &lt; 200
+1 &lt; Cache-Control: private, max-age=0,public
+1 &lt; Content-Type: text/xml; charset=utf-8
+1 &lt; Date: Fri, 05 Feb 2021 09:36:49 GMT
+1 &lt; Server: Microsoft-IIS/7.5
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-AspNet-Version: 4.0.30319
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Powered-By: ASP.NET
+&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;soap:Body&gt;&lt;CelsiusToFahrenheitResponse xmlns="https://www.w3schools.com/xml/"&gt;&lt;CelsiusToFahrenheitResult&gt;98.6&lt;/CelsiusToFahrenheitResult&gt;&lt;/CelsiusToFahrenheitResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;</div>
+<div class="step-row">
+<div class="step-container" id="21">
+<div class="step-ref passed">21</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="22">
+<div class="step-ref passed">22</div>
+<div class="step-cell passed">* print responseHeaders["Server"]</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="22">15:15:00.149 [print] [
+  "Microsoft-IIS/7.5"
+]</div>
+<div class="step-row">
+<div class="step-container" id="23">
+<div class="step-ref passed">23</div>
+<div class="step-cell passed">* print responseHeaders["Server"][0]</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="23">15:15:00.149 [print] Microsoft-IIS/7.5</div>
+<div class="step-row">
+<div class="step-container" id="24">
+<div class="step-ref passed">24</div>
+<div class="step-cell passed">* match responseHeaders["Server"] == ["Microsoft-IIS/7.5"]</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="25">
+<div class="step-ref passed">25</div>
+<div class="step-cell passed">* match responseHeaders["Server"][0] == "Microsoft-IIS/7.5"</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="26">
+<div class="step-ref passed">26</div>
+<div class="step-cell passed">* print responseType</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="26">15:15:00.149 [print] xml</div>
+<div class="step-row">
+<div class="step-container" id="27">
+<div class="step-ref passed">27</div>
+<div class="step-cell passed">* match responseType == "xml"</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="28">
+<div class="step-ref passed">28</div>
+<div class="step-cell passed">* match response contains "98.6"</div>
+</div>
+<div class="time-cell passed">15</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="29">
+<div class="step-ref passed">29</div>
+<div class="step-cell passed">* match response //CelsiusToFahrenheitResult == 98.6</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="30">
+<div class="step-ref passed">30</div>
+<div class="step-cell passed">* print responseTime</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="30">15:15:00.180 [print] 299</div>
+<div class="step-row">
+<div class="step-container" id="31">
+<div class="step-ref passed">31</div>
+<div class="step-cell passed">* assert responseTime &lt;= 2000</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="preformatted" data-parent="31">15:15:00.180 after scenario inside config</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[4:79]">
+<div class="heading-container">
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">soap</a>
+</div>
+<span class="scenario-keyword">Scenario: [4:79]</span><span class="scenario-name">Soap API TestCase4 </span>
+</div>
+<div class="scenario-time failed">ms: 576</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="32">
+<div class="step-ref passed">32</div>
+<div class="step-cell passed">Given url "http://www.dneonline.com//calculator.asmx"</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="32">15:15:00.180 From karate-config file</div>
+<div class="step-row">
+<div class="step-container" id="33">
+<div class="step-ref passed">33</div>
+<div class="step-cell passed">And header Content-Type = "text/xml;charset=utf-8"</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="34">
+<div class="step-ref passed">34</div>
+<div class="step-cell passed">And request</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="34">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+&lt;soap:Body&gt;
+&lt;Add xmlns="http://tempuri.org/"&gt;
+&lt;intA&gt;5&lt;/intA&gt;
+&lt;intB&gt;6&lt;/intB&gt;
+&lt;/Add&gt;
+&lt;/soap:Body&gt;
+&lt;/soap:Envelope&gt;</div>
+<div class="step-row">
+<div class="step-container" id="35">
+<div class="step-ref passed">35</div>
+<div class="step-cell passed">When soap action "http://www.dneonline.com//calculator.asmx"</div>
+</div>
+<div class="time-cell passed">572</div>
+</div>
+<div class="preformatted" data-parent="35">15:15:00.196 request:
+1 &gt; POST http://www.dneonline.com//calculator.asmx
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 289
+1 &gt; Content-Type: text/xml; charset=UTF-8
+1 &gt; Host: www.dneonline.com
+1 &gt; SOAPAction: http://www.dneonline.com//calculator.asmx
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&#13;
+&lt;soap:Body&gt;&#13;
+&lt;Add xmlns="http://tempuri.org/"&gt;&#13;
+&lt;intA&gt;5&lt;/intA&gt;&#13;
+&lt;intB&gt;6&lt;/intB&gt;&#13;
+&lt;/Add&gt;&#13;
+&lt;/soap:Body&gt;&#13;
+&lt;/soap:Envelope&gt;
+
+15:15:00.759 response time in milliseconds: 567.28
+1 &lt; 500
+1 &lt; Cache-Control: private
+1 &lt; Content-Length: 1046
+1 &lt; Content-Type: text/xml; charset=utf-8
+1 &lt; Date: Fri, 05 Feb 2021 09:44:59 GMT
+1 &lt; Server: Microsoft-IIS/8.0
+1 &lt; X-AspNet-Version: 2.0.50727
+1 &lt; X-Powered-By: ASP.NET
+1 &lt; X-Powered-By-Plesk: PleskWin
+&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;soap:Body&gt;&lt;soap:Fault&gt;&lt;faultcode&gt;soap:Client&lt;/faultcode&gt;&lt;faultstring&gt;System.Web.Services.Protocols.SoapException: Server did not recognize the value of HTTP Header SOAPAction: http://www.dneonline.com//calculator.asmx.&#13;
+   at System.Web.Services.Protocols.Soap11ServerProtocolHelper.RouteRequest()&#13;
+   at System.Web.Services.Protocols.SoapServerProtocol.RouteRequest(SoapServerMessage message)&#13;
+   at System.Web.Services.Protocols.SoapServerProtocol.Initialize()&#13;
+   at System.Web.Services.Protocols.ServerProtocol.SetContext(Type type, HttpContext context, HttpRequest request, HttpResponse response)&#13;
+   at System.Web.Services.Protocols.ServerProtocolFactory.Create(Type type, HttpContext context, HttpRequest request, HttpResponse response, Boolean&amp;amp; abortProcessing)&lt;/faultstring&gt;&lt;detail /&gt;&lt;/soap:Fault&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;</div>
+<div class="step-row">
+<div class="step-container" id="36">
+<div class="step-ref failed">36</div>
+<div class="step-cell failed">Then status 200</div>
+</div>
+<div class="time-cell failed">1</div>
+</div>
+<div class="preformatted" data-parent="36">15:15:00.759 status code was: 500, expected: 200, response time: 567, url: http://www.dneonline.com//calculator.asmx, response: &lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;soap:Body&gt;&lt;soap:Fault&gt;&lt;faultcode&gt;soap:Client&lt;/faultcode&gt;&lt;faultstring&gt;System.Web.Services.Protocols.SoapException: Server did not recognize the value of HTTP Header SOAPAction: http://www.dneonline.com//calculator.asmx.&#13;
+   at System.Web.Services.Protocols.Soap11ServerProtocolHelper.RouteRequest()&#13;
+   at System.Web.Services.Protocols.SoapServerProtocol.RouteRequest(SoapServerMessage message)&#13;
+   at System.Web.Services.Protocols.SoapServerProtocol.Initialize()&#13;
+   at System.Web.Services.Protocols.ServerProtocol.SetContext(Type type, HttpContext context, HttpRequest request, HttpResponse response)&#13;
+   at System.Web.Services.Protocols.ServerProtocolFactory.Create(Type type, HttpContext context, HttpRequest request, HttpResponse response, Boolean&amp;amp; abortProcessing)&lt;/faultstring&gt;&lt;detail/&gt;&lt;/soap:Fault&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;
+karate04.feature:95 - status code was: 500, expected: 200, response time: 567, url: http://www.dneonline.com//calculator.asmx, response: &lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;soap:Body&gt;&lt;soap:Fault&gt;&lt;faultcode&gt;soap:Client&lt;/faultcode&gt;&lt;faultstring&gt;System.Web.Services.Protocols.SoapException: Server did not recognize the value of HTTP Header SOAPAction: http://www.dneonline.com//calculator.asmx.&#13;
+   at System.Web.Services.Protocols.Soap11ServerProtocolHelper.RouteRequest()&#13;
+   at System.Web.Services.Protocols.SoapServerProtocol.RouteRequest(SoapServerMessage message)&#13;
+   at System.Web.Services.Protocols.SoapServerProtocol.Initialize()&#13;
+   at System.Web.Services.Protocols.ServerProtocol.SetContext(Type type, HttpContext context, HttpRequest request, HttpResponse response)&#13;
+   at System.Web.Services.Protocols.ServerProtocolFactory.Create(Type type, HttpContext context, HttpRequest request, HttpResponse response, Boolean&amp;amp; abortProcessing)&lt;/faultstring&gt;&lt;detail/&gt;&lt;/soap:Fault&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;</div>
+<div class="step-row">
+<div class="step-container" id="37">
+<div class="step-ref skipped">37</div>
+<div class="step-cell skipped">* print responseHeaders["Server"]</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="38">
+<div class="step-ref skipped">38</div>
+<div class="step-cell skipped">* print response</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="39">
+<div class="step-ref skipped">39</div>
+<div class="step-cell skipped">* print responseType</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="40">
+<div class="step-ref skipped">40</div>
+<div class="step-cell skipped">* match responseType == "xml"</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="41">
+<div class="step-ref skipped">41</div>
+<div class="step-cell skipped">* match response contains "98.6"</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="42">
+<div class="step-ref skipped">42</div>
+<div class="step-cell skipped">* match response //CelsiusToFahrenheitResult == 98.6</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="43">
+<div class="step-ref skipped">43</div>
+<div class="step-cell skipped">* print responseTime</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="44">
+<div class="step-ref skipped">44</div>
+<div class="step-cell skipped">* assert responseTime &lt;= 2000</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="preformatted" data-parent="44">15:15:00.759 after scenario inside config</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

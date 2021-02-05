@@ -1,0 +1,110 @@
+<testsuite failures="0" name="FeatureFile/karare12.feature" skipped="0" tests="4" time="1.278334">
+  <testcase classname="FeatureFile.karare12" name="DDT Testcase1" time="0.301578">
+    <system-out>Given url "https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit" . passed
+And header Content-Type = "application/x-wwW-form-urlencoded" ............. passed
+And request "Celsius=37" .................................................. passed
+And method POST ........................................................... passed
+And status 200 ............................................................ passed
+* print responseType ...................................................... passed
+* match response contains "98.6" .......................................... passed
+* assert responseTime &lt;= 1000 ............................................. passed
+* print responseTime ...................................................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFile.karare12" name="DDT Testcase1" time="0.321636">
+    <system-out>Given url "https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit" . passed
+And header Content-Type = "application/x-wwW-form-urlencoded" ............. passed
+And request "Celsius=37" .................................................. passed
+And method POST ........................................................... passed
+And status 200 ............................................................ passed
+* print responseType ...................................................... passed
+* match response contains "98.6" .......................................... passed
+* assert responseTime &lt;= 1000 ............................................. passed
+* print responseTime ...................................................... passed
+* print response .......................................................... passed
+Given url "https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit" . passed
+And header Content-Type = "application/x-wwW-form-urlencoded" ............. passed
+And request "Celsius=40" .................................................. passed
+And method POST ........................................................... passed
+And status 200 ............................................................ passed
+* print responseType ...................................................... passed
+* match response contains "104" ........................................... passed
+* assert responseTime &lt;= 1000 ............................................. passed
+* print responseTime ...................................................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFile.karare12" name="DDT Testcase2" time="0.31899">
+    <system-out>Given url "https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit" . passed
+And header Content-Type = "application/x-wwW-form-urlencoded" ............. passed
+And request "Celsius=37" .................................................. passed
+And method POST ........................................................... passed
+And status 200 ............................................................ passed
+* print responseType ...................................................... passed
+* match response contains "98.6" .......................................... passed
+* assert responseTime &lt;= 1000 ............................................. passed
+* print responseTime ...................................................... passed
+* print response .......................................................... passed
+Given url "https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit" . passed
+And header Content-Type = "application/x-wwW-form-urlencoded" ............. passed
+And request "Celsius=40" .................................................. passed
+And method POST ........................................................... passed
+And status 200 ............................................................ passed
+* print responseType ...................................................... passed
+* match response contains "104" ........................................... passed
+* assert responseTime &lt;= 1000 ............................................. passed
+* print responseTime ...................................................... passed
+* print response .......................................................... passed
+Given url "https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit" . passed
+And header Content-Type = "application/x-wwW-form-urlencoded" ............. passed
+And request "Celsius=37" .................................................. passed
+And method POST ........................................................... passed
+And status 200 ............................................................ passed
+* print responseType ...................................................... passed
+* match response contains "98.6" .......................................... passed
+* assert responseTime &lt;= 1000 ............................................. passed
+* print responseTime ...................................................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFile.karare12" name="DDT Testcase2" time="0.33613">
+    <system-out>Given url "https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit" . passed
+And header Content-Type = "application/x-wwW-form-urlencoded" ............. passed
+And request "Celsius=37" .................................................. passed
+And method POST ........................................................... passed
+And status 200 ............................................................ passed
+* print responseType ...................................................... passed
+* match response contains "98.6" .......................................... passed
+* assert responseTime &lt;= 1000 ............................................. passed
+* print responseTime ...................................................... passed
+* print response .......................................................... passed
+Given url "https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit" . passed
+And header Content-Type = "application/x-wwW-form-urlencoded" ............. passed
+And request "Celsius=40" .................................................. passed
+And method POST ........................................................... passed
+And status 200 ............................................................ passed
+* print responseType ...................................................... passed
+* match response contains "104" ........................................... passed
+* assert responseTime &lt;= 1000 ............................................. passed
+* print responseTime ...................................................... passed
+* print response .......................................................... passed
+Given url "https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit" . passed
+And header Content-Type = "application/x-wwW-form-urlencoded" ............. passed
+And request "Celsius=37" .................................................. passed
+And method POST ........................................................... passed
+And status 200 ............................................................ passed
+* print responseType ...................................................... passed
+* match response contains "98.6" .......................................... passed
+* assert responseTime &lt;= 1000 ............................................. passed
+* print responseTime ...................................................... passed
+* print response .......................................................... passed
+Given url "https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit" . passed
+And header Content-Type = "application/x-wwW-form-urlencoded" ............. passed
+And request "Celsius=40" .................................................. passed
+And method POST ........................................................... passed
+And status 200 ............................................................ passed
+* print responseType ...................................................... passed
+* match response contains "104" ........................................... passed
+* assert responseTime &lt;= 1000 ............................................. passed
+* print responseTime ...................................................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+</testsuite>
